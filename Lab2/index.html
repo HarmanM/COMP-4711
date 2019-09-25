@@ -11,73 +11,60 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="script.js" defer></script>
 
   <title>Lab 2</title>
 </head>
 
 
 <body>
-    <div class="container">
-      <div class="titlesearch">
-        <div class="form"><h3>Artist Directory</h3></div>
-      <div class="form"><form>
-        <input type="text" name="number" id="inputBox">
-      </form></div>
-
+  <div class="container">
+    <div class="titlesearch">
+      <div class="form">
+        <h3>Artist Directory</h3></div>
+      <div class="form">
+        <form>
+          <input type="text" name="number" class="inputBox">
+          <button type="button" name="button" onclick="addBtnClick()">Add Artist</button> <br>
+          <div class="artistForm">
+            <input type="text" name="artistName" id="artistName" placeholder="Artist Name"> <br>
+            <input type="text" name="aboutArtist" id="aboutArtist" placeholder="About Artist" /> <br>
+            <input type="text" name="artistImage" id="artistImage" placeholder="Image Link"> <br>
+            <button type="button" name="addArtistBtn" onclick="addArtist()" id="addArtistBtn">Add</button> <br>
+          </div>
+        </form>
       </div>
+
+
+
+    </div>
 
 
     <table id="infoTable">
       <tr>
         <td><img src="https://randomuser.me/api/portraits/med/women/12.jpg" class="img-responsive" alt="artist" class="artistImage"></td>
-        <td><div class="name">
-          <h3>Hillary Post</h3>
-        </div>
-      <div class="info">
-        New York University
-      </div></td>
-</tr>
+        <td>
+          <div class="name">
+            <h3>Hillary Post</h3>
+          </div>
+          <div class="info">
+            <p>New York University</p>
+          </div>
+        </td>
+      </tr>
 
-<tr>
-  <td><img src="https://randomuser.me/api/portraits/med/women/13.jpg" class="img-responsive" alt="artist" class="artistImage"></td>
-  <td><div class="name">
-    <h3>Hillary Post</h3>
-  </div>
-<div class="info">
-  New York University
-</div></td>
-</tr>
-<tr>
-  <td><img src="https://randomuser.me/api/portraits/med/women/14.jpg" class="img-responsive" alt="artist" class="artistImage"></td>
-  <td><div class="name">
-    <h3>Emilia Clarke</h3>
-  </div>
-<div class="info">
-  Emilia attended Boston University for music
-</div></td>
-</tr>
-<tr>
-  <td><img src="https://randomuser.me/api/portraits/med/women/15.jpg" class="img-responsive" alt="artist" id="artistImage"></td>
-  <td><div class="name">
-    <h3>Jenna Johns</h3>
-  </div>
-<div class="info">
-  New York University
-</div></td>
-</tr>
-<tr>
-  <td><img src="https://randomuser.me/api/portraits/med/women/16.jpg" class="img-responsive" alt="artist" class="artistImage"></td>
-  <td><div class="name">
-    <h3>Hillary Post</h3>
-  </div>
-<div class="info">
-  New York University
-</div></td>
-</tr>
-
+      <tr>
+        <td><img src="https://randomuser.me/api/portraits/med/women/13.jpg" class="img-responsive" alt="artist" class="artistImage"></td>
+        <td>
+          <div class="name">
+            <h3>Hillary Post</h3>
+          </div>
+          <div class="info">
+            <p>Boston University</p>
+          </div>
+        </td>
+      </tr>
     </table>
-
-
 
   </div>
 

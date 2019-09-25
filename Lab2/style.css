@@ -5,6 +5,35 @@
     margin-bottom: 20px;
 
 }
+
+.artistForm {
+  padding: 10px;
+  margin: 10px;
+}
+
+.artistForm input {
+  padding: 2px;
+  margin: 5px;
+}
+
+#addArtistBtn {
+  margin-top: 5px;
+}
+
+.delBtn {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  margin-right: 15px;
+  font-family: Roboto, sans-serif;
+  border-radius: 8px;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+}
+
 .container {
   margin-top: 20px;
   padding: 0px;
@@ -22,8 +51,12 @@
   margin-right: auto;
 }
 
-#inputBox {
-  width: 60%
+.inputBox {
+  width: 60%;
+}
+
+.artistForm input {
+  width: 43%;
 }
 
 .titlesearch {
@@ -42,6 +75,21 @@ width: 100%
 
 }
 
+#artistName {
+  display: none;
+}
+
+#aboutArtist {
+  display: none;
+}
+
+#artistImage {
+    display: none;
+}
+
+#addArtistBtn {
+    display: none;
+}
 .name h3{
   font-weight: bold;
   font-family: Roboto, sans-serif;
