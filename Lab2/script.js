@@ -63,6 +63,8 @@ function addArtist() {
   delButton.appendChild(document.createTextNode("Delete"));
   delbuttonTD.appendChild(delButton);
 
+  clearText();
+
 }
 
 
